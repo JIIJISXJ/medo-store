@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MEDO - متجر ملابس شتوية شبابي">
+  <title>MEDO | Winter Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#">MEDO<span>.</span></a>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#products">المنتجات</a>
+      <a href="#about">عن MEDO</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+    <button class="cart-btn" id="cartBtn">🛒 السلة <b id="cartCount">0</b></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">MEDO WINTER 2026</p>
+        <h1>ستايل الشتاء<br><span>بطريقة MEDO.</span></h1>
+        <p>قطع شتوية شبابية بتصميم عصري، راحة وأناقة في كل إطلالة.</p>
+        <a class="primary" href="#products">اكتشف المجموعة</a>
+      </div>
+      <div class="hero-card">
+        <div class="hero-badge">NEW<br><small>COLLECTION</small></div>
+        <div class="jacket">🧥</div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">SHOP</p>
+          <h2>المجموعة الشتوية</h2>
+        </div>
+        <span id="productCount"></span>
+      </div>
+      <div class="products" id="productsGrid"></div>
+    </section>
+
+    <section class="banner" id="about">
+      <div>
+        <p class="eyebrow">WHY MEDO?</p>
+        <h2>شتاءك له ستايل.</h2>
+        <p>اختار القطعة، اختار المقاس، واطلبها بسهولة.</p>
+      </div>
+      <div class="features">
+        <span>✓ خامات مريحة</span>
+        <span>✓ ستايل شبابي</span>
+        <span>✓ طلب سريع</span>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow">CONTACT</p>
+      <h2>جاهز لطلبك؟</h2>
+      <p>للطلب والاستفسار تواصل معنا مباشرة.</p>
+      <a class="primary" href="https://wa.me/201108302815" target="_blank">تواصل على واتساب</a>
+    </section>
+  </main>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cart">
+    <div class="cart-head">
+      <h2>سلة المشتريات</h2>
+      <button id="closeCart">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div><span>الإجمالي</span><strong id="cartTotal">€0</strong></div>
+      <button class="primary checkout" id="checkout">إتمام الطلب</button>
+    </div>
+  </aside>
+
+  <footer>
+    <div class="logo">MEDO<span>.</span></div>
+    <p>© 2026 MEDO — Winter Collection</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
